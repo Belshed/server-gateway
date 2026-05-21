@@ -11,6 +11,7 @@ services:
       - ./conf.d:/etc/nginx/conf.d:ro
       - ./logs:/var/log/nginx
       - /etc/letsencrypt:/etc/letsencrypt:ro
+      - /home/sergdenisov/angels-shop/uploads:/var/www/uploads
     networks:
       - gateway-network
     restart: unless-stopped
